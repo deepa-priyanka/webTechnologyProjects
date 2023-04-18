@@ -1,0 +1,89 @@
+<html>
+  <head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .upload-form {
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #1abc9c;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #1abc9c;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1abc9c;
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #1abc9c;
+    box-shadow: 0 0 10px #1abc9c;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    border: 2px solid #1abc9c;
+    color: #1abc9c;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #1abc9c;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #1abc9c;
+  }
+  </style>
+</head>
+  <body>
+    <div class="upload-form">
+      <h2>Upload a Picture</h2>
+      <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="picture">Select a picture:</label>
+          <input type="file" name="picture" id="picture" />
+        </div>
+        <button type="submit" class="btn">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
