@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+            /* Style for heading */
+
+h2 {
+  color: #006699;
+  text-align: center;
+}
+
+/* Style for ordered list */
+ol {
+  margin-left: 20px;
+}
+
+/* Style for sub-ordered list */
+ol > li > ol {
+  margin-left: 20px;
+}
+
+/* Style for list items */
+li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Style for sub-list items */
+li > ul > li {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+/* Style for different types of lists */
+ol > li > ol > li:before {
+  content: "(" counter(list-item, lower-alpha) ") ";
+}
+
+/* Style for list item numbers */
+ol > li:before {
+  content: counter(list-item) ". ";
+  font-weight: bold;
+  color: #006699;
+  margin-right: 5px;
+}
+
+/* Style for unordered list */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for unordered list items */
+ul > li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Style for different types of unordered lists */
+ul > li:before {
+  content: "\2022 ";
+  font-weight: bold;
+  color: #006699;
+  margin-right: 5px;
+}
+body
+{
+    background-image: url(/download.jpg);
+    background-size: cover;
+}
+        </style>
+    </head>
+  <body>
+   <h2>COLLEGE INFORMATION</h2>
+    <ol>
+       <li> AU
+           <ol type="a">
+               <li>
+                   ANITS
+                   <ul>
+                       <li>cse - 180</li>
+                       <li>ece - 170</li>
+                       <li>it - 170</li>
+                   </ul>
+               </li>
+               <li>
+                   SANKETIKA
+                   <ul>
+                       <li>              cse - 150</li>
+                       <li>ece - 130</li>
+                       <li>mech -110</li>
+                   </ul>
+               </li>
+           </ol>
+       </li>
+       <li>JNTUK
+           <OL type="a">
+               <LI>MVGR
+               <UL>
+                   <li>cse - 150</li>
+                   <Li>eee-150</Li>
+                   <LI>chem -110</LI>
+               </UL>
+               </LI>
+               <LI>LENDI
+               <UL>
+                   <LI>cse - 120</LI>
+                   <LI> eee -120</LI>
+               </UL>
+               </LI>
+           </OL>
+       </li>
+       <LI> NU</LI>
+       <LI>GITAM</LI>
+    </ol>
+  </body>
+
+  </html>

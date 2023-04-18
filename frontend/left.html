@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <style>
+        li ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(238, 232, 239);
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(66, 40, 40);
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+li:hover ul {
+  display: block;
+}
+
+li ul li {
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+
+li ul li:hover {
+  background-color: rgb(45, 38, 146);
+  color: white;
+}
+
+        body {
+            background-color:#C2C3C5;
+            background-image: url(/left.jpg);
+        }
+        h1 {
+            text-align: center;
+            text-decoration-color: rgb(89, 116, 116);
+        }
+        .list-container {
+            width: 68%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 7px solid rgb(45, 38, 146);
+            border-style: inset;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid rgb(66, 40, 40);
+            border-radius: 7px;
+            background-color: rgb(238, 232, 239);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        li:hover {
+            background-color: rgb(45, 38, 146);
+            color: white;
+            cursor: pointer;
+            transform: translateY(-5px);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1{
+            background-color: white;    
+            border: 20%;
+            border-radius: 10%;
+            border: 5px solid rgb(45, 38, 146);
+            border-style: inset;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1 bgcolor="white"><b>Contents</b></h1><br>
+    <div class="list-container">
+        <ul>
+            <li><a href="list.html" target="right">College Details</a></li>
+            <li><a href="table.html" target="right">Time Table</a></li>
+            <li><a href="reg.html" target="right">Registration Form</a></li>
+            <li>
+                <a href="#">Java Script ▼</a>
+                <ul>
+                  <li><a href="/bill.html" target="right">Bill Generation</a></li>
+                  <li><a href="/game.html" target="right">Play Games</a></li>
+                </ul>
+              </li>
+              
+        </ul>
+    </div>
+</body>
+</html>
